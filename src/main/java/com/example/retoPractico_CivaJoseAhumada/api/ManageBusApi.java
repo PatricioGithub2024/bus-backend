@@ -19,7 +19,7 @@ public class ManageBusApi {
     MaintenanceBusService maintenanceBusService;
 
     @GetMapping("/")
-    public FindBusesResponse findUsers(){
+    public FindBusesResponse findBuses(){
 
         try {
             List<BusListarDto> buses = maintenanceBusService.getAllBuses();
